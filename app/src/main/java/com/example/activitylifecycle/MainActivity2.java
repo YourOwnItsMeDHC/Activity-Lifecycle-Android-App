@@ -13,9 +13,33 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        Toast toast = Toast.makeText(this, "secondOnStart", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, "secondOnCreate", Toast.LENGTH_SHORT);
         //The android:gravity attribute is used to arrange the position of the content inside a view
         //It will display at centre above Second Activity
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Toast toast =  Toast.makeText(this, "secondOnStart", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast toast =  Toast.makeText(this, "secondOnResume", Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast toast =  Toast.makeText(this, "secondOnPause", Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
     }

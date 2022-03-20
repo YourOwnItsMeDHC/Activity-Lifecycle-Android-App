@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toast.makeText(this, "OnCreate", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "FirstOnCreate", Toast.LENGTH_SHORT).show();
 
         TextView textView = findViewById(R.id.tvFirstActivity);
 
@@ -36,37 +36,37 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
     //The super keyword in Java is a reference variable which is used to refer immediate parent class object.
         super.onStart();
-        Toast.makeText(this, "OnStart", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "FirstOnStart", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Toast.makeText(this, "OnRestart", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "FirstOnResume", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Toast.makeText(this, "OnPause", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "FirstOnPause", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Toast.makeText(this, "OnStop", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "FirstOnStop", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Toast.makeText(this, "OnRestart", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "FirstOnRestart", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Toast.makeText(this, "OnDestroy", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "FirstOnDestroy", Toast.LENGTH_SHORT).show();
     }
 
 }
